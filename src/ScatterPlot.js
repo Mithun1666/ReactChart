@@ -6,8 +6,8 @@ const ScatterPlot = () => {
   const [activeChart, setActiveChart] = useState('INR');
   const svgRef = useRef();
 
-  const width = 600;
-  const height = 400;
+  const width = 900;
+  const height = 600;
   const margin = { top: 40, right: 40, bottom: 60, left: 100 };
   const innerWidth = width - margin.left - margin.right;
   const innerHeight = height - margin.top - margin.bottom;
@@ -176,7 +176,7 @@ const ScatterPlot = () => {
 
   return (
     <div className="App" style={{ fontFamily: 'Onest' }}>
-      <h1>Salary vs Experience Chart</h1>
+      
       <div>
         <button 
           style={activeChart === 'INR' ? activeButtonStyle : inactiveButtonStyle}
